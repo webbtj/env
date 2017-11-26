@@ -35,6 +35,10 @@ class Core
         });
     }
 
+    public function test(){
+        return $this->api->test_credentials();
+    }
+
     public function refresh(){
         $cache_key = $this->cache_key();
         self::debug('deleting');

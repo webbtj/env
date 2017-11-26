@@ -8,6 +8,8 @@ use manifoldco\envy\API;
 use manifoldco\envy\Cache;
 use manifoldco\envy\Core;
 use manifoldco\envy\Commands\Refresh;
+use manifoldco\envy\Commands\Check;
+use manifoldco\envy\Commands\Env;
 
 class envyServiceProvider extends ServiceProvider
 {
@@ -25,6 +27,8 @@ class envyServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 Refresh::class,
+                Check::class,
+                Env::class,
             ]);
         }
 

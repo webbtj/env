@@ -61,4 +61,14 @@ class API
 
         return $curl_error ? null : $response;
     }
+
+    public function test_credentials(){
+        $response = json_decode($this->server_request('resources'));
+        // dd($response);
+        if((isset($response->type) && $response->type == 'unauthorized') || is_null($response)){
+            return false;
+        }else{
+            return true;
+        }
+    }
 }
