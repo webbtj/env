@@ -33,6 +33,7 @@ class Core
         collect($configs)->each(function($value, $key){
             config([$key => $value]);
         });
+        return $configs;
     }
 
     public function test(){
@@ -59,7 +60,7 @@ class Core
         }
     }
 
-    private function get_resource_level(){
+    public function get_resource_level(){
 
         if($this->token && $this->resource){
             return self::$RESOURCE;
@@ -119,7 +120,7 @@ class Core
         }
     }
 
-    private function query_string(){
+    public function query_string(){
         switch ($this->resource_level) {
             case self::$TOKEN:
                 return null;

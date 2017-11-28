@@ -5,6 +5,7 @@ namespace manifoldco\envy;
 class API
 {
     static $URL = 'https://api.marketplace.manifold.co/v1/';
+    static $VERSION = '0.0.0';
 
     public function __construct($token){
         $this->token = $token;
@@ -48,12 +49,13 @@ class API
         return empty($response) ? null : $response;
     }
 
-    private function server_request($url){
+    public function server_request($url){
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, self::$URL . $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_TIMEOUT, 30);
         curl_setopt($ch, CURLOPT_HTTPHEADER, ['Authorization: Bearer ' . $this->token]);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'php-manifold-laravel-' . self::$VERSION );
 
         $response = curl_exec($ch);
         $curl_error = curl_errno($ch);
