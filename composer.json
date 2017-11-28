@@ -1,24 +1,23 @@
 {
     "name": "manifoldco/envy",
     "type": "library",
-    "description": ":package_description",
+    "description": "A package to pull configurations from your Manifold account",
     "keywords": [
         "manifoldco",
         "envy"
     ],
-    "homepage": "https://github.com/manifoldco/envy",
-    "license": "MIT",
+    "homepage": "https://github.com/webbtj/env",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "TJ Webb",
+            "email": "webb.tj@gmail.com",
+            "homepage": "http://code.webb.tj",
             "role": "Developer"
         }
     ],
     "require": {
         "illuminate/support": "~5.1",
-        "php" : "~5.6|~7.0"
+        "php" : "~7.0"
     },
     "require-dev": {
         "phpunit/phpunit" : ">=5.4.3",
@@ -42,6 +41,11 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "manifoldco\\envy\\envyServiceProvider"
+            ]
         }
     },
     "config": {
