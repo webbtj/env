@@ -1,12 +1,12 @@
 {
-    "name": "manifoldco/envy",
+    "name": "manifoldco/manifold-laravel",
     "type": "library",
     "description": "A package to pull configurations from your Manifold account",
     "keywords": [
         "manifoldco",
-        "envy"
+        "manifold"
     ],
-    "homepage": "https://github.com/webbtj/env",
+    "homepage": "https://github.com/manifoldco/manifold-laravel",
     "authors": [
         {
             "name": "TJ Webb",
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "manifoldco\\envy\\": "src"
+            "manifoldco\\manifold\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "manifoldco\\envy\\": "tests"
+            "manifoldco\\manifold\\": "tests"
         }
     },
     "scripts": {
@@ -44,7 +44,7 @@
         },
         "laravel": {
             "providers": [
-                "manifoldco\\envy\\envyServiceProvider"
+                "manifoldco\\manifold\\manifoldServiceProvider"
             ]
         }
     },

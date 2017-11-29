@@ -2,8 +2,8 @@
 
 use Illuminate\Foundation\Testing\TestCase;
 
-use manifoldco\envy\Core;
-use manifoldco\envy\API;
+use manifoldco\manifold\Core;
+use manifoldco\manifold\API;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Contracts\Console\Kernel;
@@ -14,7 +14,7 @@ class APITest extends TestCase
     public function createApplication()
     {
         require_once __DIR__ . '/getApp.php';
-        $app = require envy_test_app_path();
+        $app = require manifold_test_app_path();
 
         $app->make(Kernel::class)->bootstrap();
 

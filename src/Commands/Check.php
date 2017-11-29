@@ -1,9 +1,9 @@
 <?php
 
-namespace manifoldco\envy\Commands;
+namespace manifoldco\manifold\Commands;
 
 use Illuminate\Console\Command;
-use manifoldco\envy\Core;
+use manifoldco\manifold\Core;
 
 class Check extends Command
 {

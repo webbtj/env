@@ -1,8 +1,8 @@
 <?php
 
-namespace manifoldco\envy;
+namespace manifoldco\manifold;
 use Illuminate\Support\Facades\Cache as SystemCache;
-use manifoldco\envy\Core;
+use manifoldco\manifold\Core;
 
 class Cache
 {

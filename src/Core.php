@@ -1,8 +1,8 @@
 <?php
 
-namespace manifoldco\envy;
-use manifoldco\envy\Cache;
-use manifoldco\envy\API;
+namespace manifoldco\manifold;
+use manifoldco\manifold\Cache;
+use manifoldco\manifold\API;
 
 class Core
 {

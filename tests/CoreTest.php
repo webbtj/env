@@ -2,7 +2,7 @@
 
 use Illuminate\Foundation\Testing\TestCase;
 
-use manifoldco\envy\Core;
+use manifoldco\manifold\Core;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Contracts\Console\Kernel;
@@ -13,7 +13,7 @@ class CoreTest extends TestCase
     public function createApplication()
     {
         require_once __DIR__ . '/getApp.php';
-        $app = require envy_test_app_path();
+        $app = require manifold_test_app_path();
 
         $app->make(Kernel::class)->bootstrap();
 

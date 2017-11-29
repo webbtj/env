@@ -1,17 +1,17 @@
 <?php
 
-namespace manifoldco\envy;
+namespace manifoldco\manifold;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Cache as SystemCache;
-use manifoldco\envy\API;
-use manifoldco\envy\Cache;
-use manifoldco\envy\Core;
-use manifoldco\envy\Commands\Refresh;
-use manifoldco\envy\Commands\Check;
-use manifoldco\envy\Commands\Env;
+use manifoldco\manifold\API;
+use manifoldco\manifold\Cache;
+use manifoldco\manifold\Core;
+use manifoldco\manifold\Commands\Refresh;
+use manifoldco\manifold\Commands\Check;
+use manifoldco\manifold\Commands\Env;
 
-class envyServiceProvider extends ServiceProvider
+class manifoldServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.

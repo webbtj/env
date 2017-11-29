@@ -1,6 +1,6 @@
 <?php
 
-namespace manifoldco\envy;
+namespace manifoldco\manifold;
 
 class API
 {
