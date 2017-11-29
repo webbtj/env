@@ -41,5 +41,6 @@ class Refresh extends Command
         // $n = $this->argument('n');
         $core = new Core;
         $core->refresh();
+        echo "cached configs cleared, fresh data pulled from your account.\n";
     }
 }

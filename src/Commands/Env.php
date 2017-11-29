@@ -56,7 +56,7 @@ class Env extends Command
 
         $begin_index = array_search($begin_phrase, $lines);
         if($begin_index === false){
-            $output_lines[] = array_merge($lines, $new_lines);
+            $output_lines = array_merge($lines, $new_lines);
         }else{
             $end_index = array_search($end_phrase, $lines);
             if($end_index === false){
